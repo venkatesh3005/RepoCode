@@ -39,6 +39,10 @@ public static void main(String[] args) {
 	String n = s.format(d);
 	System.out.println(n);
 	
+	System.out.println("Hello world");
+	
+	System.out.println("Java class");
+	
 	
 }
 }
