@@ -21,6 +21,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
@@ -38,10 +39,16 @@ public static void main(String[] args) {
 	SimpleDateFormat s=new SimpleDateFormat("dd-mm-yy");
 	String n = s.format(d);
 	System.out.println(n);
-	
+
+
 	System.out.println("Hello world");
 	
 	System.out.println("Java class");
+	
+	WebDriver driver=new ChromeDriver();
+	Actions ac=new Actions(driver);
+	WebElement a=driver.findElement(By.id("email"));
+	ac.moveToElement(a);
 	
 	
 }
